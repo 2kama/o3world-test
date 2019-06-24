@@ -1,0 +1,109 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+div, h3 {
+  box-sizing: border-box;
+}
+
+.map {
+  width: 460px;
+  height: 600px;
+  margin: auto;
+  background: url("./../img/map.png") no-repeat center center/cover;
+}
+
+.map__marker {
+  width: 100%;
+  height: 100%;
+  background: url("./../img/marker.png") no-repeat center center/25px;
+}
+
+.contact-box {
+  width: 70%;
+  margin-left: 15%;
+  float: left;
+  box-shadow: 0px 0px 3px 3px rgba(153, 153, 153, 0.2);
+  margin-top: 30px;
+}
+
+.contact-box .head-area {
+  background: #333;
+  padding: 15px 25px;
+  float: left;
+  width: 100%;
+}
+
+.contact-box .head-area .logo {
+  width: 15%;
+  float: left;
+}
+
+.contact-box .head-area h3 {
+  color: #fff;
+  float: right;
+  width: 80%;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.contact-box .foot-area {
+  background: #fff;
+  padding: 20px 30px;
+  width: 100%;
+  float: left;
+}
+
+.contact-box .foot-area__box {
+  width: 100%;
+  float: left;
+}
+
+.contact-box .foot-area__box .icon {
+  width: 10%;
+  float: left;
+  height: 20px;
+  overflow: hidden;
+}
+
+.contact-box .foot-area__box .icon img {
+  width: 15px;
+  height: 20px;
+}
+
+.contact-box .foot-area__box p {
+  margin: 0;
+  font-size: 14px;
+  width: 90%;
+  float: right;
+}
+
+.contact-box .foot-area .divider {
+  width: 90%;
+  float: right;
+  height: 1px;
+  background: #ddd;
+  margin: 15px 0px;
+}
+
+@media (max-width: 460px) {
+  .map {
+    width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .map {
+    background: transparent;
+    height: auto;
+  }
+  .map__marker {
+    background: transparent;
+  }
+  .contact-box {
+    width: 90%;
+    margin-left: 5%;
+  }
+}
